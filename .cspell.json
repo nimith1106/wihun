@@ -1,6 +1,9 @@
 {
   "version": "0.2",
   "language": "en",
+  "ignoreRegExpList": [
+    "/[\\u0900-\\u097F]+/g"
+  ],
   "words": [
     "ntvs",
     "njsproj",
@@ -37,7 +40,8 @@
     "Bommasandra",
     "BENGALURU",
     "scikit",
-    "womens"
+    "womens",
+    "personalised"
   ],
   "ignorePaths": [
     "node_modules/**",
