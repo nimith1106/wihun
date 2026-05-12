@@ -1,0 +1,67 @@
+{
+  "name": "PCODAssessment",
+  "type": "object",
+  "properties": {
+    "patient_name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "number"
+    },
+    "email": {
+      "type": "string"
+    },
+    "cycle_regularity": {
+      "type": "string",
+      "enum": [
+        "Regular (28-32 days)",
+        "Irregular (vary by >7 days)",
+        "Absent (>3 months)",
+        "Very frequent (<21 days)"
+      ]
+    },
+    "weight_gain": {
+      "type": "boolean"
+    },
+    "acne": {
+      "type": "boolean"
+    },
+    "hair_loss": {
+      "type": "boolean"
+    },
+    "excess_hair": {
+      "type": "boolean"
+    },
+    "pelvic_pain": {
+      "type": "boolean"
+    },
+    "mood_swings": {
+      "type": "boolean"
+    },
+    "fatigue": {
+      "type": "boolean"
+    },
+    "difficulty_conceiving": {
+      "type": "boolean"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "Low",
+        "Moderate",
+        "High"
+      ]
+    },
+    "score": {
+      "type": "number"
+    },
+    "recommendation": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "patient_name",
+    "age",
+    "email"
+  ]
+}

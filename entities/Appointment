@@ -1,0 +1,56 @@
+{
+  "name": "Appointment",
+  "type": "object",
+  "properties": {
+    "patient_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "doctor": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string",
+      "enum": [
+        "General Medicine",
+        "Gynecology",
+        "Cardiology",
+        "Orthopedics",
+        "Dermatology",
+        "Pediatrics"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "time_slot": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed",
+        "cancelled"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "patient_name",
+    "email",
+    "phone",
+    "department",
+    "date",
+    "time_slot"
+  ]
+}
